@@ -100,7 +100,7 @@
         }
 
         .rsvp-content {
-            max-width: 420px;
+            max-width: 480px;
             margin: 0 auto;
             width: 100%;
         }
@@ -120,7 +120,7 @@
         }
 
         .rsvp-subtitle {
-            font-size: 1.2rem;
+            font-size: 1.4rem;
             color: var(--text-muted);
             font-style: italic;
             font-weight: 400;
@@ -154,7 +154,7 @@
 
         .schedule-title {
             font-family: 'Playfair Display', serif;
-            font-size: 1.4rem;
+            font-size: 1.8rem;
             font-weight: 400;
             color: var(--gold-dark);
             text-align: center;
@@ -164,6 +164,11 @@
 
         .schedule-list {
             list-style: none;
+            display: inline-block;
+        }
+
+        .schedule-wrapper {
+            text-align: center;
         }
 
         .schedule-item {
@@ -171,6 +176,7 @@
             align-items: center;
             padding: 10px 0;
             border-bottom: 1px solid rgba(212, 184, 150, 0.4);
+            text-align: left;
         }
 
         .schedule-item:last-child {
@@ -178,15 +184,17 @@
         }
 
         .schedule-time {
-            font-weight: 600;
+            font-family: 'Playfair Display', serif;
+            font-weight: 500;
             color: var(--gold-dark);
-            min-width: 115px;
-            font-size: 1rem;
+            min-width: 145px;
+            font-size: 1.4rem;
+            letter-spacing: 0.02em;
         }
 
         .schedule-event {
             color: var(--text-dark);
-            font-size: 1.05rem;
+            font-size: 1.5rem;
             font-style: italic;
         }
 
@@ -197,7 +205,7 @@
 
         .form-label {
             display: block;
-            font-size: 1.1rem;
+            font-size: 1.3rem;
             color: var(--text-dark);
             margin-bottom: 10px;
             font-weight: 600;
@@ -212,9 +220,9 @@
         .form-input,
         .form-select {
             width: 100%;
-            padding: 16px 20px;
+            padding: 18px 22px;
             font-family: 'Cormorant Garamond', Georgia, serif;
-            font-size: 1.1rem;
+            font-size: 1.3rem;
             color: var(--text-dark);
             background: rgba(255, 255, 255, 0.9);
             border: 2px solid var(--border-gold);
@@ -249,9 +257,9 @@
 
         .submit-btn {
             width: 100%;
-            padding: 18px 40px;
+            padding: 20px 40px;
             font-family: 'Playfair Display', serif;
-            font-size: 1.2rem;
+            font-size: 1.4rem;
             font-weight: 500;
             letter-spacing: 0.1em;
             color: white;
@@ -299,13 +307,13 @@
 
         .success-title {
             font-family: 'Playfair Display', serif;
-            font-size: 2rem;
+            font-size: 2.4rem;
             color: var(--gold-dark);
             margin-bottom: 15px;
         }
 
         .success-text {
-            font-size: 1.15rem;
+            font-size: 1.35rem;
             color: var(--text-muted);
             line-height: 1.6;
         }
@@ -316,10 +324,10 @@
             background: #fff5f5;
             border: 1px solid #e53e3e;
             color: #c53030;
-            padding: 12px 16px;
+            padding: 14px 18px;
             border-radius: 8px;
             margin-bottom: 20px;
-            font-size: 1rem;
+            font-size: 1.2rem;
         }
 
         .error-message.show {
@@ -332,9 +340,9 @@
             background: linear-gradient(135deg, rgba(196, 148, 74, 0.1), rgba(212, 184, 150, 0.15));
             border: 1px solid var(--border-gold);
             border-radius: 8px;
-            padding: 12px 20px;
+            padding: 14px 22px;
             margin-bottom: 25px;
-            font-size: 1.05rem;
+            font-size: 1.25rem;
             color: var(--text-dark);
         }
 
@@ -361,13 +369,13 @@
 
         .closed-title {
             font-family: 'Playfair Display', serif;
-            font-size: 1.8rem;
+            font-size: 2.2rem;
             color: var(--gold-dark);
             margin-bottom: 15px;
         }
 
         .closed-text {
-            font-size: 1.1rem;
+            font-size: 1.3rem;
             color: var(--text-muted);
             line-height: 1.6;
         }
@@ -447,25 +455,27 @@
                 </div>
 
                 <div class="schedule-section">
-                    <h2 class="schedule-title">Schedule</h2>
-                    <ul class="schedule-list">
-                        <li class="schedule-item">
-                            <span class="schedule-time">1 PM - 2 PM</span>
-                            <span class="schedule-event">Appetizers</span>
-                        </li>
-                        <li class="schedule-item">
-                            <span class="schedule-time">2 PM - 3 PM</span>
-                            <span class="schedule-event">Nikah Ceremony</span>
-                        </li>
-                        <li class="schedule-item">
-                            <span class="schedule-time">3 PM - 4 PM</span>
-                            <span class="schedule-event">Lunch</span>
-                        </li>
-                        <li class="schedule-item">
-                            <span class="schedule-time">4 PM - 6 PM</span>
-                            <span class="schedule-event">Desserts & Photos</span>
-                        </li>
-                    </ul>
+                    <h2 class="schedule-title">Event Schedule</h2>
+                    <div class="schedule-wrapper">
+                        <ul class="schedule-list">
+                            <li class="schedule-item">
+                                <span class="schedule-time">1 PM - 2 PM</span>
+                                <span class="schedule-event">Appetizers</span>
+                            </li>
+                            <li class="schedule-item">
+                                <span class="schedule-time">2 PM - 3 PM</span>
+                                <span class="schedule-event">Nikah Ceremony</span>
+                            </li>
+                            <li class="schedule-item">
+                                <span class="schedule-time">3 PM - 4 PM</span>
+                                <span class="schedule-event">Lunch</span>
+                            </li>
+                            <li class="schedule-item">
+                                <span class="schedule-time">4 PM - 6 PM</span>
+                                <span class="schedule-event">Desserts & Photos</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div class="deadline-notice" id="deadlineNotice">
