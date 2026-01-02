@@ -184,12 +184,13 @@
         }
 
         .schedule-time {
-            font-family: 'Playfair Display', serif;
-            font-weight: 500;
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-weight: 600;
             color: var(--gold-dark);
             min-width: 145px;
             font-size: 1.4rem;
             letter-spacing: 0.02em;
+            font-variant-numeric: lining-nums;
         }
 
         .schedule-event {
@@ -425,12 +426,7 @@
             }
 
             .schedule-time {
-                min-width: 95px;
-                font-size: 0.9rem;
-            }
-
-            .schedule-event {
-                font-size: 0.95rem;
+                min-width: 130px;
             }
         }
     </style>
@@ -513,7 +509,7 @@
                             Number of Guests <span class="required">*</span>
                         </label>
                         <select id="partySize" name="partySize" class="form-select" required>
-                            <option value="" disabled selected>How many in your party?</option>
+                            <option value="" disabled selected>How many attending?</option>
                             <option value="1">1 Guest</option>
                             <option value="2">2 Guests</option>
                             <option value="3">3 Guests</option>
